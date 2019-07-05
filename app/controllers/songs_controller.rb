@@ -65,22 +65,20 @@ class SongsController < ApplicationController
   end
 
   def destroy
-<<<<<<< HEAD
+
     @song = Song.find(params[:id])
-=======
->>>>>>> 8903e8741fa1e3453631c7fe02f2a766dbd24ab9
-    @song.destroy
+
     redirect_to songs_path
   end
 
   private
-<<<<<<< HEAD
+
 
   def song_params(*args)
     params.require(:song).permit(*args)
   end
 
-=======
+
   def set_song
     @song = Song.find(params[:id])
   end
@@ -88,5 +86,5 @@ class SongsController < ApplicationController
   def song_params
     params.require(:song).permit(:title, :released, :release_year, :genre, :artist_name)
   end
->>>>>>> 8903e8741fa1e3453631c7fe02f2a766dbd24ab9
+
 end
