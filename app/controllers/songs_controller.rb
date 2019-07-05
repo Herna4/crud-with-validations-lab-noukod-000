@@ -52,17 +52,15 @@ class SongsController < ApplicationController
 
   def update
     @song.assign_attributes(song_params)
-
->>>>>>> 8903e8741fa1e3453631c7fe02f2a766dbd24ab9
     if @song.valid?
       @song.save
       redirect_to song_path(@song)
     else
-<<<<<<< HEAD
+
       render new_song_path
-=======
+
       render :edit
->>>>>>> 8903e8741fa1e3453631c7fe02f2a766dbd24ab9
+
     end
   end
 
