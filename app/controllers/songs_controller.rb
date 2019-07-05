@@ -8,7 +8,6 @@ class SongsController < ApplicationController
   end
 
   def show
-<<<<<<< HEAD
     @song = Song.find(params[:id])
   end
 
