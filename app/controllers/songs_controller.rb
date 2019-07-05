@@ -30,7 +30,6 @@ class SongsController < ApplicationController
 
   def create
     @song = Song.new(song_params(:title, :artist_name, :genre, :release_year, :released))
-=======
   end
 
   def new
